@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Pham</string>
+
+    <string name="quote">Bring you to next level</string>
+    <string name="quote_up">Up English</string>
+    <string name="sign_up_main">Sign up for free</string>
+    <string name="log_in_main">Log in</string>
+    <string name="done">Done</string>
+    <string name="Create_topic">Create Topic</string>
+    <string name="Edit_topic">Edit Topic</string>
+    <string name="Create_folder">Create Folder</string>
+    <string name="Edit_folder">Edit Folder</string>
+
+    <!--sign up activity-->
+    <string name="create_acc">Create an account</string>
+    <string name="email_phone">Enter your email</string>
+    <string name="email_phone_acc">Email</string>
+    <string name="password">Enter your password</string>
+    <string name="password_acc">Password</string>
+    <string name="re_enter_password">Re-enter your password</string>
+    <string name="re_enter_password_check">Password check</string>
+    <string name="sign_up_with">Sign up with</string>
+    <string name="login_with">Log in with</string>
+    <string name="forgot_account">Forgot password ?</string>
+    <string name="login_acc">Log in account</string>
+    <string name="title">title</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="folder_name">Folder Name</string>
+    <string name="folder_description">Folder Description</string>
+
+    <!--    Bottom navigation-->
+    <string name="home">Home</string>
+    <string name="library">Library</string>
+    <string name="profile">Profile</string>
+    <string name="add">Add</string>
+    <string name="study">Study</string>
+    <string name="add_topic">Add Topic</string>
+    <string name="progress">Progress</string>
+    <string name="export">Export</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="study_all">Study All</string>
+    <string name="study_star">Study Star List</string>
+    <string name="u_import">Import</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="vocabulary">Vocabulary</string>
+    <string name="correct_answer">Correct Answer!</string>
+    <string name="know">Know</string>
+    <string name="top_perform">Top Performer</string>
+    <string name="top_100_finish">Top Finisher</string>
+    <string name="top_frequent">Most Frequent</string>
+    <string name="still_learning">Still learning</string>
+    <string name="terms_left">Terms left</string>
+    <string name="Restart">Restart</string>
+    <string name="folder">Folder</string>
+    <string name="topic">Topic</string>
+    <string name="publish">Publish</string>
+    <string name="un_publish">Private</string>
+    <string name="flash_card">Flashcards</string>
+    <string name="type_word">Type words</string>
+    <string name="quizzes">Quizzes</string>
+
+
+    <!--    Setting-->
+    <string name="update">Update Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="change_password">Change Password</string>
+    <!-- TODO: Remove or   change this placeholder text -->
+
+    <string name="old_pass">Current Password</string>
+    <string name="old_pass_text">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="new_pass_text">New Password</string>
+    <string name="confirm_pass">Confirm New Password</string>
+    <string name="confirm_pass_text">Confirm Password</string>
+    <string name="save">Save Change</string>
+    <string name="term">Term</string>
+    <string name="definition">Definition</string>
+    <string name="visibility">Visibility</string>
+
+    <string name="save_add">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Forgot Password-->
+    <string name="email">Enter your email</string>
+    <string name="send">Send</string>
+
+    <string name="user_name">Name </string>
+    <string name="user_age">Age </string>
+    <string name="user_phone">Phone </string>
+
+    <string name="login_history">Login History</string>
+    <string name="date_cer">Date</string>
+
+
+</resources>

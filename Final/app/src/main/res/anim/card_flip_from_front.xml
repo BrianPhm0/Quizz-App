@@ -1,0 +1,9 @@
+<!-- res/animator/card_flip_from_front.xml -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="rotationY"
+        android:valueFrom="0"
+        android:valueTo="180"
+        android:duration="500"
+        android:interpolator="@android:interpolator/accelerate_decelerate"/>
+</set>

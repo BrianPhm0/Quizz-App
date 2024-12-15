@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:backgroundTint="#DCDCDC"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/vocab_detail_card"
+    android:layout_marginTop="18dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:padding="3dp">
+            <TextView
+                android:enabled="false"
+                android:gravity="left|center"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:id="@+id/text_term_detail"
+                android:textSize="25sp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/better_blue"
+                android:text="Term"/>
+
+            <TextView
+
+                android:id="@+id/text_definition_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:enabled="false"
+                android:gravity="left|center"
+                android:text="Definition"
+                android:textColor="@color/better_blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/sound_vocab_detail"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/volume">
+
+            </ImageView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/star_vocab_detail"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/baseline_star_border_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:importantForAccessibility="no" />
+                <ImageView
+                    android:id="@+id/star2_vocab_detail"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/baseline_star_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:importantForAccessibility="no" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

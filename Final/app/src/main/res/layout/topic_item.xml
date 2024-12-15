@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/topic_card"
+    android:background="@drawable/button_border"
+    android:backgroundTint="@color/better_gray"
+    android:layout_marginTop="18dp">
+
+<!--    Layout Foreground-->
+
+    <RelativeLayout
+        android:id="@+id/back_ground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/red_better"
+        android:background="@drawable/custom_login_btn">
+
+        <ImageView
+            android:id="@+id/image_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_outline_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Delete"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/image_delete"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topic_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_login_btn"
+        android:backgroundTint="@color/better_gray"
+        android:weightSum="10">
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="7"
+
+            android:padding="3dp">
+            <EditText
+                android:gravity="top"
+                android:textStyle="bold"
+                android:id="@+id/topic_name_item"
+                android:textSize="25sp"
+                android:enabled="false"
+                android:layout_marginLeft="20dp"
+                android:text="con ca"
+                android:textColor="@color/navy_blue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                />
+            <TextView
+                android:id="@+id/term_count"
+                android:textColor="@color/midnight_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/term"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

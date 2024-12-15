@@ -1,0 +1,17 @@
+<!-- res/drawable/button_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the button -->
+    <item android:drawable="@drawable/custom_login_btn" />
+
+    <!-- Border for the button -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/navy_blue" />
+            <stroke
+                android:width="2dp"
+            android:color="@color/better_blue" />
+            <corners android:radius="8dp"/>
+        </shape>
+
+    </item>
+</layer-list>

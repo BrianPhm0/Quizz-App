@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".request2.AddFolderActivity">
+
+    <TextView
+        android:id="@+id/done_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/create_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Create_folder"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/folder_name"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/folder_name"
+        android:maxLength="100"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_folder" />
+
+    <EditText
+        android:id="@+id/folder_description"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/folder_description"
+        android:maxLength="100"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/folder_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

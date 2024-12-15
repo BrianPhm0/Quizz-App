@@ -1,0 +1,32 @@
+<!-- swipe_fling_item.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easyFlipView"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="horizontal"
+        app:flipFrom="front"
+        app:autoFlipBack="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        app:autoFlipBackTime="1000">
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_back"/>
+
+        <include layout="@layout/flash_card_layout_front" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

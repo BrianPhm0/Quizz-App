@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".request3.QuizzesActivity">
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/clock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="0/s"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/clock"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+    <ImageView
+        android:id="@+id/question_mark"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/question_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+    <TextView
+        android:id="@+id/totalQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/question_mark"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+    <ImageView
+        android:id="@+id/more_setting_quizzes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/development"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/question_card"
+        android:layout_width="340dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="@color/better_gray"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock">
+
+        <ImageView
+            android:id="@+id/quizzes_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/volume"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/optionContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/question_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/optionA"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="@+id/optionContainer"
+            android:background="@drawable/custom_login_btn"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/optionB"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/optionA"
+            android:background="@drawable/custom_login_btn"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/optionC"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/optionB"
+            android:background="@drawable/custom_login_btn"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/optionD"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/optionC"
+            android:background="@drawable/custom_login_btn"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/custom_login_btn"
+            android:backgroundTint="@color/blue"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionD" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background">
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/clock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_flash_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="0/s"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/clock"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+    <ImageView
+        android:id="@+id/question_mark"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/question_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+    <ImageView
+        android:id="@+id/more_setting_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/development"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/totalQuestionFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/question_mark"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+    <ImageView
+        android:id="@+id/volumeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/volume"
+        app:layout_constraintTop_toTopOf="@+id/easyFlipView"
+        app:layout_constraintStart_toStartOf="@+id/easyFlipView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="2dp" />
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easyFlipView"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="horizontal"
+        app:flipFrom="front"
+        app:autoFlipBack="true"
+        app:autoFlipBackTime="1000"
+        app:layout_constraintTop_toBottomOf="@+id/clock"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_back"/>
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_front" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextFlash"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_login_btn"
+        android:backgroundTint="@color/blue"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUncertain"
+        app:layout_constraintTop_toBottomOf="@+id/easyFlipView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUncertain"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_login_btn"
+        android:backgroundTint="@color/red_better"
+        android:text="Uncertain"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnNextFlash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyFlipView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

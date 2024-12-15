@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/navy_blue"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@drawable/dialogbg">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_remove_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/eng" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/english"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/layoutVietnamese"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vietnam" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/vietnamese"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="23sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutStudyAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/study_all" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/study_all"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutStudyStar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/star_study" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/study_star"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

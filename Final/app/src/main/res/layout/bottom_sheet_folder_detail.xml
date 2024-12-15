@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/navy_blue"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@drawable/dialogbg">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_remove_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/layoutEditFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/edit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/plus_topic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/add_topic"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutDeleteFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_login_btn"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/delete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/delete"
+            android:textColor="#DC1216"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

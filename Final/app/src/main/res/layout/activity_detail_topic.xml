@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".request2.DetailTopicActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/back_detail_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/more_detail_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/more"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/topic_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:text="Pham"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/back_detail_topic"
+            app:layout_constraintTop_toBottomOf="@id/back_detail_topic" />
+        <TextView
+            android:id="@+id/user_name_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:text="Pham"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/topic_name_detail"
+            app:layout_constraintTop_toBottomOf="@id/topic_name_detail" />
+
+        <Button
+            android:id="@+id/flash_card"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/flash_cards"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/flash_card"
+            android:drawablePadding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_topic"/>
+
+        <Button
+            android:id="@+id/quizzes"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/quizzes"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/quizzes"
+            android:drawablePadding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flash_card" />
+        <Button
+            android:id="@+id/type_word"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/typing"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/type_word"
+            android:drawablePadding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quizzes" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_vocab"
+            android:layout_width="320dp"
+            android:layout_height="360dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/type_word" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

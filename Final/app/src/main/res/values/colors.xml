@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navy_blue">#003060</color>
+    <color name="grey">#808080</color>
+    <color name="baby_blue">#B1D4E0</color>
+    <color name="midnight_blue">#41729F</color>
+    <color name="blue">#0E86D4</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="better_blue">#00A9E2</color>
+    <color name="red">#FC0005</color>
+    <color name="red_better">#E65356</color>
+
+    <color name="better_gray">#DCDCDC</color>
+
+</resources>
